@@ -54,10 +54,8 @@ code {
   }
 
   #navbar {
+    overflow-y: unset;
     position: unset;
-    display: flex;
-    flex-direction: column;
-    min-width: 275px;
     align-items: stretch;
     padding: 0;
     margin: 0;
@@ -68,5 +66,8 @@ code {
     border-left: 8px solid grey;
     margin: 0;
     border-left: unset;
+  }
+  code {
+    max-width: 95%;
   }
 }

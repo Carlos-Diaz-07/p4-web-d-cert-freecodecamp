@@ -2,8 +2,71 @@ body {
   display: flex;
 }
 
+#navbar {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  min-width: 275px;
+  padding: 0;
+  text-align: center;
+  overflow-y: scroll;
+ 
+}
+
+.nav-link {
+  align-self: center;
+  justify-self: center;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  text-align: center;
+  border-top: 1px solid black;
+  padding: 20px 10px 20px 10px;
+}
+
+#main-doc {
+  position: absolute;
+  border-left: 8px solid grey;
+  margin-left: 275px;
+}
+
+.main-section {
+  border-bottom: 2px solid black;
+  padding: 0 10px 0 20px;
+}
+
+code {
+  background-color: rgba(126, 126, 126, 0.281);
+  display: block;
+  text-align: center;
+  max-width: 60%;
+}
+
 @media(max-width: 590px) {
   body {
     display: flex;
     flex-direction: column;
+  }
+
+  #navbar {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    min-width: 275px;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+  }
+
+  #main-doc {
+    position: unset;
+    border-left: 8px solid grey;
+    margin: 0;
+    border-left: unset;
+  }
 }
